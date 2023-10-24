@@ -18,27 +18,42 @@
         <h3>Tugas 5</h3>
         <ul>
             <li v-for="book in books" :class="{fav: book.isFav}" @click="Fav(book)">
-                <p>{{book.title}} - {{book.author}}</p>
+                <div v-if="book.tampil">
+                    <p>{{book.title}} - {{book.author}}</p>
+                </div>
             </li>
-        </ul>
+        </ul><br>
+
+        Cari Buku :
+        <input v-model="cariTitle">
+        <button @click="cariBuku()">Click</button>
     </div>
     <script>
         const { createApp, ref } = Vue
         createApp({
             data() {
                 return {
+                    cariTitle: '',
                     books: [
-                        { title: 'PWeb', author: 'Ridho', isFav: true },
-                        { title: 'Kalkulus', author: 'Tunas', isFav: true },
-                        { title: 'Fisika', author: 'Zahri', isFav: true }
+                        { title: 'PWeb', author: 'Ridho', isFav: true , tampil: true},
+                        { title: 'Kalkulus', author: 'Tunas', isFav: true, tampil: true},
+                        { title: 'Fisika', author: 'Zahri', isFav: true, tampil: true}
                     ]
-
                 }
             },
 
             methods: {
-                Fav(book){
+                Fav(book) {
                     book.isFav ^= 1
+                },
+
+                cariBuku() {
+                    for (const b of this.books) {
+                        console.log(b)
+                        if (b.title == this.cariTitle) {
+                            this.Fav(b)
+                        }
+                    }
                 }
             }
         }).mount('#app')
