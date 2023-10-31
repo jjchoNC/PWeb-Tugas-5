@@ -6,5 +6,7 @@
 #### Tugas1 : Membuat kalkulator sederhana menggunakan Vue JS
 #### Tugas2 : Membuat interactive click https://www.youtube.com/watch?v=lpFSYencTps&list=PLJRgmiw7PrTcR7y-sM_FDcrM6HYXr9H6F&index=28&ab_channel=RidhoRahmanHariadi
 ---
-#### Link1 : https://jjchonc.github.io/PWeb-Tugas-5/Simple%20Calculator/index.html
-#### Link2 : https://jjchonc.github.io/PWeb-Tugas-5/Interactive%20Click/index.html
+#### Link1 [github.io]  : https://jjchonc.github.io/PWeb-Tugas-5/Simple%20Calculator/index.html
+#### Link2 [github.io]  : https://jjchonc.github.io/PWeb-Tugas-5/Interactive%20Click/index.html
+#### Link3 [vercel.app] : https://jericho-web-tugas-5-calculator.vercel.app/
+#### Link4 [vercel.app] : https://jericho-web-tugas-5-interactive-click.vercel.app/
